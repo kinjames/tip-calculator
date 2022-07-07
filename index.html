@@ -33,13 +33,13 @@
               <label for="bill">Bill</label>
             <div class="bill-container">
               <i class="fas fa-dollar-sign"></i>
-              <input dir="rtl" type="text" class="input1" placeholder="0">
+              <input dir="rtl" type="tel" class="input1 bill-amount" id="input-1" placeholder="0" required autocomplete="off">
             </div>
           </div>
           <div class="btn-container">
             <label for="tip">Select Tip %</label>
             <div class="btns">
-              <button class="btn green">
+              <button class="btn green five">
                 5%
               </button>
               <button class="btn green">
@@ -54,19 +54,19 @@
               <button class="btn green">
                 50%
               </button>
-              <input type="text" class="btn custom" dir="rtl" placeholder="Custom">
+              <input type="tel" class="btn custom" dir="rtl" placeholder="Custom" autocomplete="off">
             </div>
           </div>
           <div class="bill-input">
             <div class="label-error">
               <label for="bill">Number of People</label>
-              <p class="zero">
+              <p class="zero hide">
                 Can't be zero
               </p>
             </div>
             <div class="bill-container">
               <i class="fas fa-user"></i>
-              <input dir="rtl" type="text" class="input1" placeholder="0">
+              <input dir="rtl" type="tel" class="input1 number-of-people" id="input-2" placeholder="0" autocomplete="off" required>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
                   / person
                 </span>
               </p>
-              <p class="tip-number">
+              <p class="tip-number amount value" id="amount">
                 &dollar;0.00
               </p>
             </div>
@@ -90,40 +90,18 @@
                   / person
                 </span>
               </p>
-              <p class="tip-number">
+              <p class="tip-number total value" id="total">
                 &dollar;0.00
               </p>
             </div>
           </div>
-          <button class="cta">
+          <button class="cta" type="reset">
             Reset
           </button>
         </div>
       </div>
     </div>
   </main>
-
-  <!-- https://kinjames.github.io/tip-calculator/ -->
-
-  <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
   
     <footer>
       <div class="attribution">
