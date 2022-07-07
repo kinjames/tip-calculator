@@ -1,0 +1,281 @@
+ 
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+label {
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+    width: 100%;
+    padding: 20px;
+    font-family: 'Space Mono', monospace;
+    align-items: center;
+}
+
+
+header {
+    margin-bottom: 50px;
+}
+
+
+h1 {
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.numbers,.display {
+    width: 50%;
+}
+
+.numbers {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*  */
+
+.bill-container {
+    position: relative;
+}
+
+.input1 {
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    margin-top: 7px;
+}
+
+.input1:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+
+
+.custom:focus {
+    border: 3px solid hsl(172, 67%, 45%);
+    outline: none;
+    padding: 10px;
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+}
+
+.fa-dollar-sign {
+    position: absolute;
+    color: hsl(184, 14%, 56%);
+    top: 40%;
+    left: 4%;
+}
+
+.fa-user{
+    position: absolute;
+    color: hsl(184, 14%, 56%);
+    top: 40%;
+    left: 4%;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.green {
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+}
+
+.green:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.custom::placeholder {
+    text-align: center;
+}
+
+.display{
+    background-color: hsl(183, 100%, 15%);
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-number {
+    display: flex;
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.para1 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.para2 {
+    color: hsl(186, 14%, 43%);
+}
+
+.cta {
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: hsl(183, 100%, 25%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.label-error {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zero {
+    color: red;
+    font-weight: 700;
+    display: none;
+}
+
+.active {
+    border: 2px solid red;
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1040px){
+    html,body,main,header,footer,.container,.numbers,.display,.main,.btns,.btn-container {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    html,body,main,header,footer,.container,.numbers,.display,.main,.btns,.btn-container {
+        width: 100%;
+    }
+
+    body {
+        padding: 20px 0;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .numbers {
+        padding: 20px 0;
+    }
+
+
+    .btn {
+        flex: 40%;
+    }
+
+    .display{
+        gap: 50px;
+    }
+
+
+}
