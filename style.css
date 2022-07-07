@@ -235,7 +235,6 @@ button {
 
 .active {
     border: 2px solid red;
-    outline: 1px solid red;
 }
 
 .active-bg {
